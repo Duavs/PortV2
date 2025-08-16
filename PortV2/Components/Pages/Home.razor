@@ -1,5 +1,24 @@
 ﻿@page "/"
+<title>Home</title>
+<div style="display: flex; justify-content: center; align-items: center; height: 90vh; background-color: #F5F5F5;">
+    <!-- Left Column - Profile Picture -->
+    <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <img src="lib/images/profile.png" alt="Profile Picture"
+             style="width: 380px; height: 380px; border-radius: 50%; object-fit: cover; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);" />
+    </div>
 
-<PageTitle>Home Page</PageTitle>
+    <!-- Right Column - About Me -->
+    <div style="flex: 1;">
+        <p style="margin-bottom: 10px; font-size: 7rem">Hi, I'm John Paul (John)</p>
+        <p style="font-size: 1.5rem; line-height: 1.6; color: #444;">
+            I'm a programmer with a passion for creating innovative solutions. With a background in software development, 
+            I specialize in building scalable applications that enhance user experiences. 
+            My journey in tech has been driven by curiosity and a desire to solve complex problems. 
+            When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.
+        </p>
+    </div>
+</div>
 
-<h1>Welcome to home page</h1>
+@code {
+   
+}
