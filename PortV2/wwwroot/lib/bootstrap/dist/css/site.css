@@ -1,0 +1,55 @@
+.portfolio-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Hero */
+.hero {
+    margin-top: 2rem;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.tagline {
+    color: gray;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* About */
+.about, .skills, .projects {
+    margin-top: 3rem;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    background: #f0f0f0;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Projects */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.project-card {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

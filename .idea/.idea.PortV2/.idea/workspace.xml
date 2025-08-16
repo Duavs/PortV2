@@ -9,15 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Experience.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PortV2/wwwroot/lib/bootstrap/dist/css/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Layout/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Layout/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/PortV2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/PortV2.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,13 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,6 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,7 +114,8 @@
       <updated>1755177676291</updated>
       <workItem from="1755177678530" duration="1201000" />
       <workItem from="1755179492404" duration="3583000" />
-      <workItem from="1755268361373" duration="3389000" />
+      <workItem from="1755268361373" duration="5279000" />
+      <workItem from="1755302250365" duration="5402000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
@@ -126,7 +133,47 @@
       <option name="project" value="LOCAL" />
       <updated>1755179985495</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added About.razor page">
+      <option name="closed" value="true" />
+      <created>1755272347453</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755272347453</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added Experience.razor page">
+      <option name="closed" value="true" />
+      <created>1755272366894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755272366894</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated the mainlayout">
+      <option name="closed" value="true" />
+      <created>1755272401129</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755272401129</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added links for Experiences and About">
+      <option name="closed" value="true" />
+      <created>1755272423255</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755272423255</updated>
+    </task>
+    <task id="LOCAL-00007" summary="changes">
+      <option name="closed" value="true" />
+      <created>1755272431305</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1755272431305</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,9 +194,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="changes" />
     <MESSAGE value="altered home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="altered home page" />
+    <MESSAGE value="added About.razor page" />
+    <MESSAGE value="added Experience.razor page" />
+    <MESSAGE value="updated the mainlayout" />
+    <MESSAGE value="added links for Experiences and About" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -169,6 +220,9 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/PortV2/Components/Pages/Experience.razor</url>
           <line>3</line>
+          <properties isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+          </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
