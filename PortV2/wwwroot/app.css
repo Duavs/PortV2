@@ -7,7 +7,7 @@ html, body {
 }
 
 .full-width-container {
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -15,8 +15,21 @@ html, body {
     background-color: #F5F5F5;
     padding: 0;
     margin: 0;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+    /*margin-left: calc(-50vw + 50%);*/
+    /*margin-right: calc(-50vw + 50%);*/
+}
+
+.full-width-about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #F445F5;
+    padding: 0;
+    margin: 0;
+    /*margin-left: calc(-50vw + 50%);*/
+    /*margin-right: calc(-50vw + 50%);*/
 }
 a, .btn-link {
     color: #006bb7;
@@ -28,8 +41,7 @@ a, .btn-link {
     border-color: #1861ac;
 }
 .btn-primary:hover {
-    background-color: #02376c;
-    transform: scale(1.05);
+    background-color: #02376c;    transform: scale(1.05);
     transition: all 0.3s ease;
 }
 
