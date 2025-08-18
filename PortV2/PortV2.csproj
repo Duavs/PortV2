@@ -18,4 +18,8 @@
       <Folder Include="wwwroot\lib\images\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Remove="wwwroot\favicon.png" />
+    </ItemGroup>
+
 </Project>
