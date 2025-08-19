@@ -1,17 +1,39 @@
 @page "/about"
 <title>About Me</title>
 
-<div class="full-width-about-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background-color: #B3C8CF; color: #333; padding: 20px;">
-    <h1 style="margin-bottom: 20px;">Hello, I’m John Paul 👋</h1>
-    <p style="max-width: 700px; text-align: center; font-size: 1.2rem; line-height: 1.6;">
-        I’m a <strong>.NET Developer</strong> and <strong>Angular Enthusiast</strong> passionate about building scalable, 
-        efficient, and user-friendly web applications. I enjoy working with <strong>C#, Blazor, SQL, Docker, and Azure</strong> 
-        to create modern solutions that make an impact.
-    </p>
-
-    <div style="margin-top: 30px; display: flex; gap: 20px;">
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" style="text-decoration: none; padding: 10px 20px; background-color: #0A66C2; color: white; border-radius: 6px; font-weight: bold;">LinkedIn</a>
-        <a href="https://github.com/YOUR-GITHUB" target="_blank" style="text-decoration: none; padding: 10px 20px; background-color: #333; color: white; border-radius: 6px; font-weight: bold;">GitHub</a>
+<div class="full-width-container" style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; min-height: 100vh; color: #333; padding: 20px; gap: 40px;">
+    <div style="flex: 1 1 300px; max-width: 400px; display: flex; justify-content: center; align-items: center;">
+        <img src="https://via.placeholder.com/350" alt="Profile Picture" style="width: 100%; max-width: 350px; border-radius: 12px;" />
+    </div>
+    <div style="flex: 2 1 400px; max-width: 700px; display: flex; flex-direction: column; gap: 30px;">
+        <section>
+            <h2 style="margin-bottom: 10px;">Education</h2>
+            <p>Bachelor of Science in Computer Science from XYZ University.</p>
+        </section>
+        <section>
+            <h2 style="margin-bottom: 10px;">Location</h2>
+            <div style="width: 100%; height: 250px; border-radius: 12px; overflow: hidden;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10775.693978641779!2d124.76337881432718!3d11.222439100690123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33080989f1e70161%3A0xf071f0235cc8449c!2sHibucawan%2C%20Jaro%2C%20Leyte!5e1!3m2!1sen!2sph!4v1755608558462!5m2!1sen!2sph"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <section>
+            <h2 style="margin-bottom: 10px;">Hobbies</h2>
+            <p>Coding, hiking, photography, and playing guitar.</p>
+        </section>
+        <section>
+            <h2 style="margin-bottom: 10px;">Social Media</h2>
+            <div style="display: flex; gap: 20px;">
+                <a href="https://www.linkedin.com/in/john-duavis/" target="_blank" style="text-decoration: none; padding: 10px 20px; background-color: #0A66C2; color: white; border-radius: 6px; font-weight: bold;">LinkedIn</a>
+                <a href="https://github.com/Duavs" target="_blank" style="text-decoration: none; padding: 10px 20px; background-color: #333; color: white; border-radius: 6px; font-weight: bold;">GitHub</a>
+            </div>
+        </section>
     </div>
 </div>
 @code {
