@@ -11,10 +11,8 @@
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/wwwroot/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/wwwroot/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,7 @@
       <workItem from="1755177678530" duration="1201000" />
       <workItem from="1755179492404" duration="3583000" />
       <workItem from="1755268361373" duration="5279000" />
-      <workItem from="1755302250365" duration="60468000" />
+      <workItem from="1755302250365" duration="69144000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
@@ -288,7 +286,31 @@
       <option name="project" value="LOCAL" />
       <updated>1755525468493</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Revamp About page layout and content">
+      <option name="closed" value="true" />
+      <created>1755610107195</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1755610107195</updated>
+    </task>
+    <task id="LOCAL-00023" summary="changes in app css">
+      <option name="closed" value="true" />
+      <created>1755610120734</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1755610120734</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Remove inline border style from full-width container in Home.razor">
+      <option name="closed" value="true" />
+      <created>1755610129564</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1755610129564</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +347,10 @@
     <MESSAGE value="updated app css" />
     <MESSAGE value="changed icon" />
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="Revamp About page layout and content" />
+    <MESSAGE value="changes in app css" />
+    <MESSAGE value="Remove inline border style from full-width container in Home.razor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove inline border style from full-width container in Home.razor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -349,6 +374,11 @@
             <option name="multiMethodBreakpoint" value="true" />
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/PortV2/Components/Pages/About.razor</url>
+          <line>2</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
