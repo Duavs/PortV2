@@ -8,16 +8,19 @@ function scrollToTopOf(el) {
     }
 }
 
-function registerScrollListener (elementId, dotNetHelper)  {
+function registerScrollListener (elementId, dotNetHelper) {
     const element = document.getElementById(elementId);
     if (!element) return;
 
     element.addEventListener("scroll", () => {
-        dotNetHelper.invokeMethodAsync("OnScrollChanged", element.scrollTop);
+        if (dotNetHelper) {
+            const scrollValue = Math.floor(element.scrollTop || 0); // always integer
+            dotNetHelper.invokeMethodAsync("OnScrollChanged", scrollValue);
+        }
     });
 }
 
 function getScrollTopOf (element) {
     if (!element) return 0;
-    return element.scrollTop;
+    return Math.floor(element.scrollTop || 0); // force integer
 }
