@@ -1,11 +1,32 @@
 @page "/about"
 @inject IJSRuntime _JS
+@inject NavigationManager _Navigation
+
 <title>About Me</title>
 
 <div class="full-width-container" style="display: flex; flex-wrap: nowrap; align-items: flex-start; justify-content: center; min-height: 100vh; color: #070707; gap: 40px;">
     <div style="flex: 0 0 500px; max-width: 500px; min-height: 100vh; position: sticky; top: 0; display: flex; justify-content: center; align-items: center; background-color: #cecece;">
-       <img src="lib/images/profile.png" alt="Profile Picture" style="width: 100%; max-width: 350px; border-radius: 50%; border: 5px solid #626262; background-color:#626262;" />
+        <img src="lib/images/profile.png" alt="Profile Picture" style="width: 100%; max-width: 350px; border-radius: 50%; border: 5px solid #626262; background-color:#626262;" />
     </div>
+    @* <section>
+        <h1 style="margin-bottom: 10px;">Chat with Me</h1>
+    
+        <input @bind="user" placeholder="Your name" 
+               style="margin-bottom:10px; padding:8px; width:100%;" />
+        <textarea @bind="message" placeholder="Your message" 
+              style="margin-bottom:10px; padding:8px; width:100%; height:80px;"></textarea>
+        <button @onclick="SendMessage" 
+                style="padding: 10px 20px; background-color: #0A66C2; color: white; border: none; border-radius: 6px; font-weight: bold;">
+            Send
+        </button>
+
+        <ul>
+            @foreach (var msg in messages)
+            {
+                <li>@msg</li>
+            }
+        </ul>
+    </section> *@
     <div @ref="scrollableDiv" @onscroll="OnScroll" style="flex: 1; max-width: 100%; overflow-y: auto; height: 100vh; padding: 40px; display: flex; flex-direction: column; gap: 30px;">
         <section>
             <h1 style="margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #626262;">Education</h1>
@@ -63,6 +84,7 @@
                 <span style="padding: 8px 16px; border-radius: 20px; background-color: #68217A; color: white; font-weight: bold;">Entity Framework</span>
                 <span style="padding: 8px 16px; border-radius: 20px; background-color: #EE4323; color: white; font-weight: bold;">CodeIgniter 3</span>
                 <span style="padding: 8px 16px; border-radius: 20px; background-color: #339933; color: white; font-weight: bold;">Node.js</span>
+                <span style="padding: 8px 16px; border-radius: 20px; background-color: #DD0031; color: white; font-weight: bold;">Angular</span>
             </div>
         </section>
         <section>
@@ -88,6 +110,12 @@
     
     private ElementReference scrollableDiv;
     private bool showScrollButton = false;
+    private string? user;
+    private string? message;
+    private List<string> messages = new();
+    
+    @* [CascadingParameter] private HubConnection? HubConnection { get; set; } *@
+
     
     private async Task ScrollToTop()
     {
@@ -103,7 +131,7 @@
             showScrollButton = shouldShow;
             StateHasChanged();
         }
-    }
+    } 
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -118,5 +146,30 @@
     {
         await OnScroll();
     }
+    
+    @* protected override async Task OnInitializedAsync()
+    {
+        if (HubConnection is not null)
+        {
+            HubConnection.On<string, string>("ReceiveMessage", (user, msg) =>
+            {
+                messages.Add($"{user}: {msg}");
+                InvokeAsync(StateHasChanged);
+            });
 
+            if (HubConnection.State == HubConnectionState.Disconnected)
+            {
+                await HubConnection.StartAsync();
+            }
+        }
+    }
+
+    private async Task SendMessage()
+    {
+        if (!string.IsNullOrWhiteSpace(user) && !string.IsNullOrWhiteSpace(message))
+        {
+            await HubConnection!.SendAsync("SendMessage", user, message);
+            message = string.Empty;
+        }
+    } *@
 }
