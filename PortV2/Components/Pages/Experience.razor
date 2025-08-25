@@ -1,7 +1,19 @@
 @page "/experience"
+<title>Experiences</title>
+@if (underConstruction == true)
+{
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 80vh; text-align: center;  color: #333;">
+        <span style="font-size: 6rem;">🚧</span>
+        <h1 style="font-size: 3rem; margin: 10px 0;">Page Under Construction</h1>
+        <p style="font-size: 1.2rem; color: #555; max-width: 600px;">
+            We're working hard to bring you this content soon. Please check back later!
+        </p>
+    </div>
 
-<h3>Experience</h3>
+}
+
+
 
 @code {
-    
+    Boolean underConstruction = true;
 }
