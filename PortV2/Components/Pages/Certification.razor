@@ -1,17 +1,66 @@
 @page "/certification"
 <title>Certifications</title>
-@if (underConstruction == true)
+@if (underConstruction)
 {
-    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 80vh; text-align: center;  color: #333;">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 80vh; text-align: center; color: #333;">
         <span style="font-size: 6rem;">🚧</span>
         <h1 style="font-size: 3rem; margin: 10px 0;">Page Under Construction</h1>
         <p style="font-size: 1.2rem; color: #555; max-width: 600px;">
             We're working hard to bring you this content soon. Please check back later!
         </p>
     </div>
-
+}
+else
+{
+    <section style="padding: 2rem; max-width: 1200px; margin: auto;">
+        <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">My Certifications</h1>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            @foreach (var cert in certifications)
+            {
+                <div style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background-color: #fff;">
+                    <img src="@cert.ImageUrl" alt="@cert.Title" style="width: 100%; height: 160px; object-fit: cover; border-radius: 4px; margin-bottom: 1rem;" />
+                    <h2 style="font-size: 1.25rem; margin: 0 0 0.5rem 0;">@cert.Title</h2>
+                    <p style="margin: 0 0 0.25rem 0; color: #555;"><strong>Issued by:</strong> @cert.Issuer</p>
+                    <p style="margin: 0; color: #777;"><strong>Date Earned:</strong> @cert.DateEarned.ToString("MMMM yyyy")</p>
+                </div>
+            }
+        </div>
+    </section>
 }
 
 @code {
     Boolean underConstruction = true;
+    
+    class Certifications
+    {
+        public string Title { get; set; }
+        public string Issuer { get; set; }
+        public DateTime DateEarned { get; set; }
+        public string ImageUrl { get; set; }
+    }
+
+    List<Certifications> certifications = new List<Certifications>
+    {
+        new Certifications
+        {
+            Title = "Certified Blazor Developer",
+            Issuer = "Blazor Academy",
+            DateEarned = new DateTime(2023, 5, 1),
+            ImageUrl = "https://via.placeholder.com/400x160?text=Blazor+Developer"
+        },
+        new Certifications
+        {
+            Title = "Azure Fundamentals",
+            Issuer = "Microsoft",
+            DateEarned = new DateTime(2022, 11, 15),
+            ImageUrl = "https://via.placeholder.com/400x160?text=Azure+Fundamentals"
+        },
+        new Certifications
+        {
+            Title = "C# Programming Expert",
+            Issuer = "Code Institute",
+            DateEarned = new DateTime(2023, 1, 20),
+            ImageUrl = "https://via.placeholder.com/400x160?text=C%23+Expert"
+        }
+    };
 }

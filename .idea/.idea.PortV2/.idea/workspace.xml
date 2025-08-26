@@ -10,14 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Certification.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Experience.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Experience.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Certification.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Certification.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +143,7 @@
       <workItem from="1755179492404" duration="3583000" />
       <workItem from="1755268361373" duration="5279000" />
       <workItem from="1755302250365" duration="96713000" />
-      <workItem from="1755878640060" duration="26715000" />
+      <workItem from="1755878640060" duration="32639000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
@@ -397,7 +393,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756046648288</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Add Certification page with under construction message">
+      <option name="closed" value="true" />
+      <created>1756135970102</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1756135970103</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add under construction message to Experience page and added certification in NavBar.razor">
+      <option name="closed" value="true" />
+      <created>1756136001204</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1756136001204</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,8 +430,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added About.razor page" />
-    <MESSAGE value="added Experience.razor page" />
     <MESSAGE value="updated the mainlayout" />
     <MESSAGE value="added links for Experiences and About" />
     <MESSAGE value="enhanced Home.razor with profile picture and personal introduction" />
@@ -443,7 +453,9 @@
     <MESSAGE value="Add location details and improve layout in About page" />
     <MESSAGE value="Update About page to include technologies and frameworks sections with styled tags" />
     <MESSAGE value="Implement SignalR MessageHub for real-time messaging and enhance About page with user input functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement SignalR MessageHub for real-time messaging and enhance About page with user input functionality" />
+    <MESSAGE value="Add Certification page with under construction message" />
+    <MESSAGE value="Add under construction message to Experience page and added certification in NavBar.razor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add under construction message to Experience page and added certification in NavBar.razor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
