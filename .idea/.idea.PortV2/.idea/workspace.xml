@@ -10,9 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +142,7 @@
       <workItem from="1755268361373" duration="5279000" />
       <workItem from="1755302250365" duration="96713000" />
       <workItem from="1755878640060" duration="33997000" />
-      <workItem from="1756307489844" duration="5671000" />
+      <workItem from="1756307489844" duration="5808000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
@@ -435,7 +432,31 @@
       <option name="project" value="LOCAL" />
       <updated>1756309310200</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Rename About page route to /about-john-paul-duavis">
+      <option name="closed" value="true" />
+      <created>1756392181366</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1756392181366</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Update Home page title and add meta tags for SEO">
+      <option name="closed" value="true" />
+      <created>1756392190755</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1756392190755</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Rename About page link to /about-john-paul-duavis">
+      <option name="closed" value="true" />
+      <created>1756392197946</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1756392197946</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,9 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="refactored MainLayout.razor to remove default margins and paddings" />
-    <MESSAGE value="profile photo" />
-    <MESSAGE value="apply necessary css" />
     <MESSAGE value="fix layout" />
     <MESSAGE value="updated mainlayout" />
     <MESSAGE value="home image" />
@@ -481,7 +499,10 @@
     <MESSAGE value="Add certification display to Certification page with under construction message" />
     <MESSAGE value="blazorCertificate" />
     <MESSAGE value="Update certification details and improve image styling in Certification page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update certification details and improve image styling in Certification page" />
+    <MESSAGE value="Rename About page route to /about-john-paul-duavis" />
+    <MESSAGE value="Update Home page title and add meta tags for SEO" />
+    <MESSAGE value="Rename About page link to /about-john-paul-duavis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename About page link to /about-john-paul-duavis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
