@@ -11,10 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Certification.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Certification.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/PortV2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/PortV2.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +145,7 @@
       <workItem from="1755268361373" duration="5279000" />
       <workItem from="1755302250365" duration="96713000" />
       <workItem from="1755878640060" duration="33997000" />
-      <workItem from="1756307489844" duration="1722000" />
+      <workItem from="1756307489844" duration="5671000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
@@ -420,7 +419,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756219589930</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="blazorCertificate">
+      <option name="closed" value="true" />
+      <created>1756309284933</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1756309284933</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Update certification details and improve image styling in Certification page">
+      <option name="closed" value="true" />
+      <created>1756309310200</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1756309310200</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,8 +456,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added links for Experiences and About" />
-    <MESSAGE value="enhanced Home.razor with profile picture and personal introduction" />
     <MESSAGE value="refactored MainLayout.razor to remove default margins and paddings" />
     <MESSAGE value="profile photo" />
     <MESSAGE value="apply necessary css" />
@@ -466,7 +479,9 @@
     <MESSAGE value="Add Certification page with under construction message" />
     <MESSAGE value="Add under construction message to Experience page and added certification in NavBar.razor" />
     <MESSAGE value="Add certification display to Certification page with under construction message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add certification display to Certification page with under construction message" />
+    <MESSAGE value="blazorCertificate" />
+    <MESSAGE value="Update certification details and improve image styling in Certification page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update certification details and improve image styling in Certification page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
