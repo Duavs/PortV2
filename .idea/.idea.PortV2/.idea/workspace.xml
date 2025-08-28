@@ -10,7 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Home.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PortV2/wwwroot/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +26,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="XML File" />
       </list>
     </option>
   </component>
@@ -142,7 +144,7 @@
       <workItem from="1755268361373" duration="5279000" />
       <workItem from="1755302250365" duration="96713000" />
       <workItem from="1755878640060" duration="33997000" />
-      <workItem from="1756307489844" duration="5808000" />
+      <workItem from="1756307489844" duration="7173000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
@@ -456,7 +458,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756392197946</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Update Home page link to point to /about-john-paul-duavis">
+      <option name="closed" value="true" />
+      <created>1756392329121</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1756392329121</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +487,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fix layout" />
     <MESSAGE value="updated mainlayout" />
     <MESSAGE value="home image" />
     <MESSAGE value="updated home page" />
@@ -502,7 +511,8 @@
     <MESSAGE value="Rename About page route to /about-john-paul-duavis" />
     <MESSAGE value="Update Home page title and add meta tags for SEO" />
     <MESSAGE value="Rename About page link to /about-john-paul-duavis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename About page link to /about-john-paul-duavis" />
+    <MESSAGE value="Update Home page link to point to /about-john-paul-duavis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Home page link to point to /about-john-paul-duavis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
