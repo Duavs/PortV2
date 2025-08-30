@@ -10,8 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PortV2/wwwroot/sitemap.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,24 +61,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.PortV2: http.executor": "Run",
-    ".NET Launch Settings Profile.PortV2: https.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.PortV2: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.PortV2: https.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.PortV2: http">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -144,7 +146,8 @@
       <workItem from="1755268361373" duration="5279000" />
       <workItem from="1755302250365" duration="96713000" />
       <workItem from="1755878640060" duration="33997000" />
-      <workItem from="1756307489844" duration="7173000" />
+      <workItem from="1756307489844" duration="8725000" />
+      <workItem from="1756567693527" duration="881000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
@@ -466,7 +469,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756392329121</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Add sitemap.xml for improved SEO and site indexing">
+      <option name="closed" value="true" />
+      <created>1756394036087</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1756394036087</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +498,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="updated mainlayout" />
     <MESSAGE value="home image" />
     <MESSAGE value="updated home page" />
     <MESSAGE value="updated app css" />
@@ -512,7 +522,8 @@
     <MESSAGE value="Update Home page title and add meta tags for SEO" />
     <MESSAGE value="Rename About page link to /about-john-paul-duavis" />
     <MESSAGE value="Update Home page link to point to /about-john-paul-duavis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Home page link to point to /about-john-paul-duavis" />
+    <MESSAGE value="Add sitemap.xml for improved SEO and site indexing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sitemap.xml for improved SEO and site indexing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -531,7 +542,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/PortV2/Components/Pages/About.razor</url>
-          <line>156</line>
+          <line>166</line>
           <properties isMultiMethodBreakpoint="true">
             <option name="multiMethodBreakpoint" value="true" />
           </properties>
