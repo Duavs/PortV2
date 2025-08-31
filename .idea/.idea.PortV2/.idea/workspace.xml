@@ -10,10 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Contact.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Counter.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Weather.razor" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +151,7 @@
       <workItem from="1755302250365" duration="96713000" />
       <workItem from="1755878640060" duration="33997000" />
       <workItem from="1756307489844" duration="8725000" />
-      <workItem from="1756567693527" duration="881000" />
+      <workItem from="1756567693527" duration="5632000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />
@@ -477,7 +481,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756394036087</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Add initial configuration files and enhance About page with technology icons">
+      <option name="closed" value="true" />
+      <created>1756568826689</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1756568826689</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +510,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="home image" />
     <MESSAGE value="updated home page" />
     <MESSAGE value="updated app css" />
     <MESSAGE value="changed icon" />
@@ -523,7 +534,8 @@
     <MESSAGE value="Rename About page link to /about-john-paul-duavis" />
     <MESSAGE value="Update Home page link to point to /about-john-paul-duavis" />
     <MESSAGE value="Add sitemap.xml for improved SEO and site indexing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sitemap.xml for improved SEO and site indexing" />
+    <MESSAGE value="Add initial configuration files and enhance About page with technology icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial configuration files and enhance About page with technology icons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -542,7 +554,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/PortV2/Components/Pages/About.razor</url>
-          <line>166</line>
+          <line>188</line>
           <properties isMultiMethodBreakpoint="true">
             <option name="multiMethodBreakpoint" value="true" />
           </properties>
