@@ -4,7 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using PortV2.Components;
 using PortV2.Components.Account;
 using PortV2.Data;
+using Microsoft.AspNetCore.ResponseCompression;
 using PortV2.Hubs;
+using PortV2.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,8 +40,13 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 builder.Services.AddServerSideBlazor()
     .AddCircuitOptions(options => { options.DetailedErrors = true; });
-
+builder.Services.AddSingleton<ChatService>();
 builder.Services.AddSignalR();
+builder.Services.AddResponseCompression(opts =>
+{
+    opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
+        [ "application/octet-stream" ]);
+});
 
 var app = builder.Build();
 
@@ -63,6 +70,7 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+app.UseResponseCompression();
 app.MapHub<MessageHub>("/messagehub");
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();
