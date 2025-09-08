@@ -10,12 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PortV2/Data/ContactFormModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,55 +148,8 @@
       <workItem from="1755878640060" duration="33997000" />
       <workItem from="1756307489844" duration="8725000" />
       <workItem from="1756567693527" duration="7219000" />
-      <workItem from="1756822913077" duration="2239000" />
-    </task>
-    <task id="LOCAL-00001" summary="changes">
-      <option name="closed" value="true" />
-      <created>1755179564700</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1755179564700</updated>
-    </task>
-    <task id="LOCAL-00002" summary="altered home page">
-      <option name="closed" value="true" />
-      <created>1755179985495</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1755179985495</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added About.razor page">
-      <option name="closed" value="true" />
-      <created>1755272347453</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1755272347453</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added Experience.razor page">
-      <option name="closed" value="true" />
-      <created>1755272366894</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1755272366894</updated>
-    </task>
-    <task id="LOCAL-00005" summary="updated the mainlayout">
-      <option name="closed" value="true" />
-      <created>1755272401129</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1755272401129</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added links for Experiences and About">
-      <option name="closed" value="true" />
-      <created>1755272423255</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1755272423255</updated>
+      <workItem from="1756822913077" duration="10467000" />
+      <workItem from="1757339893504" duration="3088000" />
     </task>
     <task id="LOCAL-00007" summary="changes">
       <option name="closed" value="true" />
@@ -520,7 +471,79 @@
       <option name="project" value="LOCAL" />
       <updated>1756652245804</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Add ContactFormModel with validation attributes">
+      <option name="closed" value="true" />
+      <created>1756828341491</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1756828341491</updated>
+    </task>
+    <task id="LOCAL-00048" summary="changes">
+      <option name="closed" value="true" />
+      <created>1756913540368</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1756913540368</updated>
+    </task>
+    <task id="LOCAL-00049" summary="added ChatService.cs">
+      <option name="closed" value="true" />
+      <created>1756913565182</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1756913565182</updated>
+    </task>
+    <task id="LOCAL-00050" summary="updated chat with signalR">
+      <option name="closed" value="true" />
+      <created>1756913617386</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1756913617387</updated>
+    </task>
+    <task id="LOCAL-00051" summary="added Services">
+      <option name="closed" value="true" />
+      <created>1756913649857</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1756913649857</updated>
+    </task>
+    <task id="LOCAL-00052" summary="changes">
+      <option name="closed" value="true" />
+      <created>1756913675784</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1756913675784</updated>
+    </task>
+    <task id="LOCAL-00053" summary="refactor Contact component to use EmailService for form submissions">
+      <option name="closed" value="true" />
+      <created>1757344593361</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1757344593361</updated>
+    </task>
+    <task id="LOCAL-00054" summary="add EmailService for sending emails with SMTP configuration">
+      <option name="closed" value="true" />
+      <created>1757344605206</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1757344605206</updated>
+    </task>
+    <task id="LOCAL-00055" summary="configure EmailSettings and register EmailService in the DI container">
+      <option name="closed" value="true" />
+      <created>1757344618535</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1757344618535</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,13 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Revamp About page layout and content" />
-    <MESSAGE value="changes in app css" />
-    <MESSAGE value="Remove inline border style from full-width container in Home.razor" />
-    <MESSAGE value="Revamp layout and styles of About page" />
-    <MESSAGE value="Enhance About page layout and functionality with improved content and scroll-to-top feature" />
-    <MESSAGE value="Add Bootstrap Icons and scroll functionality script to App.razor" />
-    <MESSAGE value="Add scroll functionality with smooth scroll to top and scroll listener" />
     <MESSAGE value="Add location details and improve layout in About page" />
     <MESSAGE value="Update About page to include technologies and frameworks sections with styled tags" />
     <MESSAGE value="Implement SignalR MessageHub for real-time messaging and enhance About page with user input functionality" />
@@ -565,8 +581,15 @@
     <MESSAGE value="Add Contact page with form and live chat functionality" />
     <MESSAGE value="removed file" />
     <MESSAGE value="added contact in NavBar.razor" />
+    <MESSAGE value="Add ContactFormModel with validation attributes" />
+    <MESSAGE value="added ChatService.cs" />
+    <MESSAGE value="updated chat with signalR" />
+    <MESSAGE value="added Services" />
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="refactor Contact component to use EmailService for form submissions" />
+    <MESSAGE value="add EmailService for sending emails with SMTP configuration" />
+    <MESSAGE value="configure EmailSettings and register EmailService in the DI container" />
+    <option name="LAST_COMMIT_MESSAGE" value="configure EmailSettings and register EmailService in the DI container" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
