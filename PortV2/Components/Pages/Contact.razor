@@ -1,54 +1,54 @@
 @page "/contact"
-@inject ChatService ChatService
+@inject EmailService EmailService
 
-<div style="display: flex; flex-direction: column; gap: 20px; max-width: 600px; margin: auto;">
-
-    <EditForm Model="@contactForm" OnValidSubmit="HandleValidSubmit">
-        <DataAnnotationsValidator />
-        <ValidationSummary />
-
-        <div class="mb-3">
-            <InputText @bind-Value="contactForm.User" class="form-control" placeholder="Your Name" />
-            <ValidationMessage For="@(() => contactForm.User)" />
+<div class="d-flex justify-content-center mt-5">
+    <div class="card w-50">
+        <div class="card-header">
+            <h3>Contact Me</h3>
         </div>
-        <div class="mb-3">
-            <InputText @bind-Value="contactForm.Email" class="form-control" placeholder="Your Email" />
-            <ValidationMessage For="@(() => contactForm.Email)" />
-        </div>
-        <div class="mb-3">
-            <InputTextArea @bind-Value="contactForm.Message" class="form-control" placeholder="Your Message" />
-            <ValidationMessage For="@(() => contactForm.Message)" />
-        </div>
+        <div class="card-body">
+            <EditForm Model="@contactForm" OnValidSubmit="HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
 
-        <button type="submit" class="btn btn-primary">Send Message</button>
-    </EditForm>
+                <div class="mb-3">
+                    <InputText @bind-Value="contactForm.User" class="form-control" placeholder="Your Name" />
+                    <ValidationMessage For="@(() => contactForm.User)" />
+                </div>
+                <div class="mb-3">
+                    <InputText @bind-Value="contactForm.Email" class="form-control" placeholder="Your Email" />
+                    <ValidationMessage For="@(() => contactForm.Email)" />
+                </div>
+                <div class="mb-3">
+                    <InputTextArea @bind-Value="contactForm.Message" class="form-control" placeholder="Your Message" />
+                    <ValidationMessage For="@(() => contactForm.Message)" />
+                </div>
 
-    <ul>
-        @foreach (var msg in messages)
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </EditForm>
+        </div>
+        @if (successMessage is not null)
         {
-            <li>@msg</li>
+            <div class="card-footer">
+                <div class="alert alert-success m-0">@successMessage</div>
+            </div>
         }
-    </ul>
+    </div>
 </div>
 
 @code {
-    // private string? user;
-    // private string? email;
-    // private string? message;
-
     private ContactFormModel contactForm = new();
-    private List<string> messages = new();
-
-    // private async Task SendMessage()
-    // {
-    //     // TODO: Implement SignalR message sending for contact form
-    //     messages.Add($"[Contact Form] {user} ({email}): {message}");
-    // }
+    private string? successMessage;
 
     private async Task HandleValidSubmit()
     {
-            await ChatService.SendMessageAsync(contactForm.User!, contactForm.Message!);
-            messages.Add($"{contactForm.User}: {contactForm.Message}");
-            contactForm = new(); // reset form
+        var body = $"<strong>Name:</strong> {contactForm.User}<br/>" +
+                   $"<strong>Email:</strong> {contactForm.Email}<br/>" +
+                   $"<strong>Message:</strong> {contactForm.Message}";
+
+        await EmailService.SendEmailAsync("paulduavis09@gmail.com", "New Portfolio Contact", body);
+
+        successMessage = "Thank you for reaching out! I'll get back to you soon.";
+        contactForm = new(); // Reset form
     }
 }
