@@ -2,35 +2,44 @@
 @inject EmailService EmailService
 
 <div class="d-flex justify-content-center mt-5">
-    <div class="card w-50">
-        <div class="card-header">
-            <h3>Contact Me</h3>
+    <div class="card w-50 shadow-lg border-0 rounded-4">
+        <div class="card-header text-center bg-dark text-light py-3 rounded-top-4">
+            <h3>Let's Connect</h3>
         </div>
         <div class="card-body">
             <EditForm Model="@contactForm" OnValidSubmit="HandleValidSubmit">
                 <DataAnnotationsValidator />
-                <ValidationSummary />
+                @* <ValidationSummary /> *@
 
-                <div class="mb-3">
-                    <InputText @bind-Value="contactForm.User" class="form-control" placeholder="Your Name" />
+                <div class="form-floating mb-3">
+                    <InputText @bind-Value="contactForm.User" class="form-control rounded-3 shadow-sm" id="nameInput" placeholder="Enter your full name" />
+                    <label for="nameInput" class="small text-muted">Full Name</label>
                     <ValidationMessage For="@(() => contactForm.User)" />
                 </div>
-                <div class="mb-3">
-                    <InputText @bind-Value="contactForm.Email" class="form-control" placeholder="Your Email" />
+                <div class="form-floating mb-3">
+                    <InputText @bind-Value="contactForm.Email" class="form-control rounded-3 shadow-sm" id="emailInput" placeholder="Enter your email address" />
+                    <label for="emailInput" class="small text-muted">Email Address</label>
                     <ValidationMessage For="@(() => contactForm.Email)" />
                 </div>
-                <div class="mb-3">
-                    <InputTextArea @bind-Value="contactForm.Message" class="form-control" placeholder="Your Message" />
+                <div class="form-floating mb-3">
+                    <InputTextArea @bind-Value="contactForm.Message" class="form-control rounded-3 shadow-sm" id="messageInput" placeholder="Write your message here..." rows="5" />
+                    <label for="messageInput" class="small text-muted">Message</label>
                     <ValidationMessage For="@(() => contactForm.Message)" />
                 </div>
 
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-dark w-100 py-3 fw-semibold rounded-3 shadow" disabled="@isSubmitting"> 
+                    @(isSubmitting ? "Sending..." : "Send Message")
+                </button>
             </EditForm>
+            @if (errorMessage is not null)
+            {
+                <div class="alert alert-danger mt-3 rounded-3 shadow-sm">@errorMessage</div>
+            }
         </div>
         @if (successMessage is not null)
         {
             <div class="card-footer">
-                <div class="alert alert-success m-0">@successMessage</div>
+                <div class="alert alert-success m-0 rounded-3 shadow-sm">@successMessage</div>
             </div>
         }
     </div>
@@ -39,16 +48,35 @@
 @code {
     private ContactFormModel contactForm = new();
     private string? successMessage;
-
+    private string? errorMessage;
+    private bool isSubmitting; 
+    
+    
+    
     private async Task HandleValidSubmit()
     {
-        var body = $"<strong>Name:</strong> {contactForm.User}<br/>" +
-                   $"<strong>Email:</strong> {contactForm.Email}<br/>" +
-                   $"<strong>Message:</strong> {contactForm.Message}";
+        isSubmitting = true;
+        successMessage = null;
+        errorMessage = null;
+        try
+        {
+            var body = $"<strong>Name:</strong> {contactForm.User}<br/>" +
+                       $"<strong>Email:</strong> {contactForm.Email}<br/>" +
+                       $"<strong>Message:</strong> {contactForm.Message}";
+            await EmailService.SendEmailAsync("paulduavis09@gmail.com", "New Portfolio Contact", body);
 
-        await EmailService.SendEmailAsync("paulduavis09@gmail.com", "New Portfolio Contact", body);
+            successMessage = "Thank you for reaching out! I'll get back to you soon.";
+            contactForm = new(); // Reset form
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Something went wrong. Please try again later.";
+        }
+        finally
+        {
+            isSubmitting = false;
+        }
 
-        successMessage = "Thank you for reaching out! I'll get back to you soon.";
-        contactForm = new(); // Reset form
+       
     }
 }

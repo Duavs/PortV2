@@ -10,7 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/PortV2/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Contact.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Contact.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,15 +149,7 @@
       <workItem from="1756307489844" duration="8725000" />
       <workItem from="1756567693527" duration="7219000" />
       <workItem from="1756822913077" duration="10467000" />
-      <workItem from="1757339893504" duration="3467000" />
-    </task>
-    <task id="LOCAL-00008" summary="enhanced Home.razor with profile picture and personal introduction">
-      <option name="closed" value="true" />
-      <created>1755308061096</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1755308061096</updated>
+      <workItem from="1757339893504" duration="7702000" />
     </task>
     <task id="LOCAL-00009" summary="refactored MainLayout.razor to remove default margins and paddings">
       <option name="closed" value="true" />
@@ -540,7 +535,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757345202273</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update email settings configuration in appsettings.json">
+      <option name="closed" value="true" />
+      <created>1757345238265</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1757345238265</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add location details and improve layout in About page" />
     <MESSAGE value="Update About page to include technologies and frameworks sections with styled tags" />
     <MESSAGE value="Implement SignalR MessageHub for real-time messaging and enhance About page with user input functionality" />
     <MESSAGE value="Add Certification page with under construction message" />
@@ -586,7 +588,8 @@
     <MESSAGE value="add EmailService for sending emails with SMTP configuration" />
     <MESSAGE value="configure EmailSettings and register EmailService in the DI container" />
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="update email settings configuration in appsettings.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="update email settings configuration in appsettings.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
