@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PortV2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2497f2d0092d680ab2e13d08cf4c5671cf983003")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4283e95bfbfc1d0b6264f5821c70dfe9f3ddbae5")]
 [assembly: System.Reflection.AssemblyProductAttribute("PortV2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortV2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

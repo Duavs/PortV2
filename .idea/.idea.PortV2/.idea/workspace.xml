@@ -11,7 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Contact.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Contact.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Experience.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Experience.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
@@ -149,31 +150,8 @@
       <workItem from="1756307489844" duration="8725000" />
       <workItem from="1756567693527" duration="7219000" />
       <workItem from="1756822913077" duration="10467000" />
-      <workItem from="1757339893504" duration="7702000" />
-    </task>
-    <task id="LOCAL-00009" summary="refactored MainLayout.razor to remove default margins and paddings">
-      <option name="closed" value="true" />
-      <created>1755308078954</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1755308078954</updated>
-    </task>
-    <task id="LOCAL-00010" summary="changes">
-      <option name="closed" value="true" />
-      <created>1755308092003</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1755308092003</updated>
-    </task>
-    <task id="LOCAL-00011" summary="profile photo">
-      <option name="closed" value="true" />
-      <created>1755308252719</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1755308252719</updated>
+      <workItem from="1757339893504" duration="10797000" />
+      <workItem from="1757508145139" duration="4551000" />
     </task>
     <task id="LOCAL-00012" summary="apply necessary css">
       <option name="closed" value="true" />
@@ -543,7 +521,31 @@
       <option name="project" value="LOCAL" />
       <updated>1757345238265</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="enhance Contact form layout and error handling">
+      <option name="closed" value="true" />
+      <created>1757428702911</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1757428702911</updated>
+    </task>
+    <task id="LOCAL-00059" summary="refactor Certification page: update title, layout, and styling for better presentation">
+      <option name="closed" value="true" />
+      <created>1757512925195</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1757512925196</updated>
+    </task>
+    <task id="LOCAL-00060" summary="refactor Contact form: streamline submission handling and improve code readability">
+      <option name="closed" value="true" />
+      <created>1757512947108</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1757512947108</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,9 +566,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Update About page to include technologies and frameworks sections with styled tags" />
-    <MESSAGE value="Implement SignalR MessageHub for real-time messaging and enhance About page with user input functionality" />
-    <MESSAGE value="Add Certification page with under construction message" />
     <MESSAGE value="Add under construction message to Experience page and added certification in NavBar.razor" />
     <MESSAGE value="Add certification display to Certification page with under construction message" />
     <MESSAGE value="blazorCertificate" />
@@ -589,7 +588,10 @@
     <MESSAGE value="configure EmailSettings and register EmailService in the DI container" />
     <MESSAGE value="changes" />
     <MESSAGE value="update email settings configuration in appsettings.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="update email settings configuration in appsettings.json" />
+    <MESSAGE value="enhance Contact form layout and error handling" />
+    <MESSAGE value="refactor Certification page: update title, layout, and styling for better presentation" />
+    <MESSAGE value="refactor Contact form: streamline submission handling and improve code readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor Contact form: streamline submission handling and improve code readability" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
