@@ -1,5 +1,5 @@
-@page "/certification"
-<title>Certifications</title>
+@page "/certificates"
+<title>Certificates</title>
 @if (underConstruction)
 {
     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 80vh; text-align: center; color: #333;">
@@ -12,16 +12,18 @@
 }
 else
 {
-    <section style="padding: 2rem; max-width: 1200px; margin: auto;">
-        <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">My Certifications</h1>
+    <section style="padding: 2rem; max-width: 900px; margin: 2rem auto;">
+        <h1 style="text-align: center; font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem; color: #333;">My Certificates</h1>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
             @foreach (var cert in certifications)
             {
-                <div style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background-color: #fff;">
-                  <img src="@cert.ImageUrl" alt="@cert.Title" style="width: 100%; max-height: 250px; object-fit: contain; border-radius: 8px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;" />
-                    <h2 style="font-size: 1.25rem; margin: 0 0 0.5rem 0;">@cert.Title</h2>
-                    <p style="margin: 0 0 0.25rem 0; color: #555;"><strong>Issued by:</strong> @cert.Issuer</p>
-                    <p style="margin: 0; color: #777;"><strong>Date Earned:</strong> @cert.DateEarned.ToString("MMMM yyyy")</p>
+                <div style="background-color: #f9f9f9; border-left: 4px solid #626262; border-radius: 8px; padding: 1.5rem; margin: 0; box-shadow: 0 0 8px rgba(0,0,0,0); transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: default;"
+                     onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';"
+                     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 8px rgba(0,0,0,0)';">
+                    <img src="@cert.ImageUrl" alt="@cert.Title" style="display: block; margin-left: auto; margin-right: auto; max-height: 220px; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border: 1px solid #ddd; margin-bottom: 1rem;" />
+                    <h2 style="font-size: 1.5rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #222;">@cert.Title</h2>
+                    <p style="margin: 0 0 0.25rem 0; font-weight: 500; color: #444;">Issued by: @cert.Issuer</p>
+                    <p style="margin: 0; font-size: 0.875rem; color: #777;">Date Earned: @cert.DateEarned.ToString("MMMM yyyy")</p>
                 </div>
             }
         </div>
@@ -29,7 +31,7 @@ else
 }
 
 @code {
-    Boolean underConstruction = true;
+    Boolean underConstruction = false;
     
     class Certifications
     {
@@ -47,20 +49,7 @@ else
             Issuer = "Udemy",
             DateEarned = new DateTime(2025, 8, 16),
             ImageUrl = "lib/images/Certifications/blazor9CompletionCertificate.jpg"
-        },
-        new Certifications
-        {
-            Title = "Azure Fundamentals",
-            Issuer = "Microsoft",
-            DateEarned = new DateTime(2022, 11, 15),
-            ImageUrl = "https://via.placeholder.com/400x160?text=Azure+Fundamentals"
-        },
-        new Certifications
-        {
-            Title = "C# Programming Expert",
-            Issuer = "Code Institute",
-            DateEarned = new DateTime(2023, 1, 20),
-            ImageUrl = "https://via.placeholder.com/400x160?text=C%23+Expert"
         }
+       
     };
 }
