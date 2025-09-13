@@ -143,7 +143,7 @@
     private string? user;
     private string? message;
     private List<string> messages = new();
-    
+    private DotNetObjectReference<About>? objRef;
     @* [CascadingParameter] private HubConnection? HubConnection { get; set; } *@
 
     
@@ -167,7 +167,8 @@
     {
         if (firstRender)
         {
-            await _JS.InvokeVoidAsync("registerScrollListener", scrollableDiv, DotNetObjectReference.Create(this));
+            objRef = DotNetObjectReference.Create(this);
+            await _JS.InvokeVoidAsync("registerScrollListener", scrollableDiv, objRef);
         }
     }
 
@@ -175,6 +176,11 @@
     public async Task OnScrollCallback()
     {
         await OnScroll();
+    }
+
+    public void Dispose()
+    {
+        objRef?.Dispose();
     }
     
     @* protected override async Task OnInitializedAsync()
