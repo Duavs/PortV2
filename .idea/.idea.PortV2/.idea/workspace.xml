@@ -11,8 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Layout/NavBar.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/Experience.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/Experience.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
@@ -151,23 +150,8 @@
       <workItem from="1756567693527" duration="7219000" />
       <workItem from="1756822913077" duration="10467000" />
       <workItem from="1757339893504" duration="10797000" />
-      <workItem from="1757508145139" duration="4551000" />
-    </task>
-    <task id="LOCAL-00012" summary="apply necessary css">
-      <option name="closed" value="true" />
-      <created>1755361042760</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1755361042760</updated>
-    </task>
-    <task id="LOCAL-00013" summary="changes">
-      <option name="closed" value="true" />
-      <created>1755361061945</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1755361061945</updated>
+      <workItem from="1757508145139" duration="6092000" />
+      <workItem from="1757776883725" duration="426000" />
     </task>
     <task id="LOCAL-00014" summary="fix layout">
       <option name="closed" value="true" />
@@ -545,7 +529,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757512947108</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="refactor Experience page: update layout and content for improved presentation">
+      <option name="closed" value="true" />
+      <created>1757513447785</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1757513447785</updated>
+    </task>
+    <task id="LOCAL-00062" summary="refactor NavBar: update link from 'Certifications' to 'Certificates'">
+      <option name="closed" value="true" />
+      <created>1757513466337</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1757513466337</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,8 +566,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add under construction message to Experience page and added certification in NavBar.razor" />
-    <MESSAGE value="Add certification display to Certification page with under construction message" />
     <MESSAGE value="blazorCertificate" />
     <MESSAGE value="Update certification details and improve image styling in Certification page" />
     <MESSAGE value="Rename About page route to /about-john-paul-duavis" />
@@ -591,7 +589,9 @@
     <MESSAGE value="enhance Contact form layout and error handling" />
     <MESSAGE value="refactor Certification page: update title, layout, and styling for better presentation" />
     <MESSAGE value="refactor Contact form: streamline submission handling and improve code readability" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor Contact form: streamline submission handling and improve code readability" />
+    <MESSAGE value="refactor Experience page: update layout and content for improved presentation" />
+    <MESSAGE value="refactor NavBar: update link from 'Certifications' to 'Certificates'" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor NavBar: update link from 'Certifications' to 'Certificates'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -610,7 +610,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/PortV2/Components/Pages/About.razor</url>
-          <line>188</line>
+          <line>186</line>
           <properties isMultiMethodBreakpoint="true">
             <option name="multiMethodBreakpoint" value="true" />
           </properties>
