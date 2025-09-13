@@ -12,6 +12,8 @@
     <list default="true" id="2c9fee21-ba25-439b-988c-57acde39f892" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortV2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/Components/Pages/About.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PortV2/obj/Debug/net9.0/PortV2.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,15 +151,7 @@
       <workItem from="1756822913077" duration="10467000" />
       <workItem from="1757339893504" duration="10797000" />
       <workItem from="1757508145139" duration="6092000" />
-      <workItem from="1757776883725" duration="890000" />
-    </task>
-    <task id="LOCAL-00015" summary="changes">
-      <option name="closed" value="true" />
-      <created>1755361092497</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1755361092497</updated>
+      <workItem from="1757776883725" duration="1814000" />
     </task>
     <task id="LOCAL-00016" summary="updated mainlayout">
       <option name="closed" value="true" />
@@ -543,7 +537,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757777359659</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="refactor About page: manage DotNetObjectReference lifecycle for scroll listener">
+      <option name="closed" value="true" />
+      <created>1757777840501</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1757777840501</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +566,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Update certification details and improve image styling in Certification page" />
     <MESSAGE value="Rename About page route to /about-john-paul-duavis" />
     <MESSAGE value="Update Home page title and add meta tags for SEO" />
     <MESSAGE value="Rename About page link to /about-john-paul-duavis" />
@@ -589,7 +590,8 @@
     <MESSAGE value="refactor Experience page: update layout and content for improved presentation" />
     <MESSAGE value="refactor NavBar: update link from 'Certifications' to 'Certificates'" />
     <MESSAGE value="refactor About page: remove unnecessary icon and clean up iframe structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor About page: remove unnecessary icon and clean up iframe structure" />
+    <MESSAGE value="refactor About page: manage DotNetObjectReference lifecycle for scroll listener" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor About page: manage DotNetObjectReference lifecycle for scroll listener" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -608,7 +610,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/PortV2/Components/Pages/About.razor</url>
-          <line>192</line>
+          <line>190</line>
           <properties isMultiMethodBreakpoint="true">
             <option name="multiMethodBreakpoint" value="true" />
           </properties>

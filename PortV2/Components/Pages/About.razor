@@ -4,9 +4,9 @@
 
 <title>About Me</title>
 
-<div class="full-width-container" style="display: flex; flex-wrap: nowrap; align-items: flex-start; justify-content: center; min-height: 100vh; color: #070707; gap: 40px;">
-    <div style="flex: 0 0 500px; max-width: 500px; min-height: 100vh; position: sticky; top: 0; display: flex; justify-content: center; align-items: center; background-color: #cecece;">
-        <img src="lib/images/profile.png" alt="Profile Picture" style="width: 100%; max-width: 350px; border-radius: 50%; border: 5px solid #626262; background-color:#626262;" />
+<div class="full-width-container" style="display: flex; flex-wrap: nowrap; align-items: flex-start; justify-content: center; min-height: 100vh; color: #222; gap: 48px; background-color: #f9f9f9; padding: 40px 20px;">
+    <div style="flex: 0 0 500px; max-width: 500px; min-height: 100vh; position: sticky; top: 20px; display: flex; justify-content: center; align-items: center; background-color: #e0e0e0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+        <img src="lib/images/profile.png" alt="Profile Picture" style="width: 100%; max-width: 350px; border-radius: 50%; border: 6px solid #7a7a7a; background-color:#7a7a7a; box-shadow: 0 8px 16px rgba(0,0,0,0.15);" />
     </div>
     @* <section>
         <h1 style="margin-bottom: 10px;">Chat with Me</h1>
@@ -27,17 +27,17 @@
             }
         </ul>
     </section> *@
-    <div @ref="scrollableDiv" @onscroll="OnScroll" style="flex: 1; max-width: 100%; overflow-y: auto; height: 100vh; padding: 40px; display: flex; flex-direction: column; gap: 30px;">
-        <section>
-            <h1 style="margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #626262;">Education</h1>
-            <h2 style="margin-bottom: 10px; margin-left: 20px; color: #555;">Senior High School</h2>
-            <p style="margin-left: 20px; line-height: 1.6; padding-right: 20px; text-align: justify;">
+    <div @ref="scrollableDiv" @onscroll="OnScroll" style="flex: 1; max-width: 100%; overflow-y: auto; height: 100vh; padding: 48px 32px; display: flex; flex-direction: column; gap: 40px; background-color: #fff; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.05);">
+        <section style="padding-bottom: 24px; border-bottom: 2px solid #ddd;">
+            <h1 style="margin-bottom: 24px; font-weight: 700; font-size: 2.25rem; color: #333;">Education</h1>
+            <h2 style="margin-bottom: 14px; margin-left: 24px; color: #666; font-weight: 600; font-size: 1.25rem;">Senior High School</h2>
+            <p style="margin-left: 24px; line-height: 1.75; padding-right: 24px; text-align: justify; color: #444; font-size: 1rem;">
                 I attended senior high school from 2016 to 2017 under the Technical-Vocational-Livelihood (TVL) strand, specializing in Programming. 
                 During my final year, I deepened my knowledge of programming and applied these skills to develop a system as part of the curriculum requirements. 
                 I also successfully defended a capstone project, showcasing both my technical and problem-solving abilities.
             </p>
-            <h2 style="margin-bottom: 10px; margin-left: 20px; color: #555;">College</h2>
-            <p style="margin-left: 20px; line-height: 1.6; padding-right: 20px; text-align: justify;">
+            <h2 style="margin-top: 32px; margin-bottom: 14px; margin-left: 24px; color: #666; font-weight: 600; font-size: 1.25rem;">College</h2>
+            <p style="margin-left: 24px; line-height: 1.75; padding-right: 24px; text-align: justify; color: #444; font-size: 1rem;">
                 I graduated with a Bachelor's degree in Information Technology from 2019 to 2023.
                 During my studies, I built a strong foundation in core areas such as Data Structures and Algorithms, 
                 object-oriented programming with Java, server-side development with Node.js, and working with both relational and unstructured databases like MongoDB. 
@@ -46,91 +46,89 @@
                 My primary responsibility was developing and maintaining web applications using CodeIgniter 3. This experience allowed me to apply classroom knowledge 
                 in a real-world setting, strengthening my technical expertise and professional skills.
             </p>
-            <hr/>
         </section>
-        <section>
-            <h1 style="margin-bottom: 10px;">Location</h1>
-            <p style="margin-left: 20px; line-height: 1.6; padding-right: 20px; text-align: justify;">
+        <section style="padding-bottom: 24px; border-bottom: 2px solid #ddd;">
+            <h1 style="margin-bottom: 16px; font-weight: 700; font-size: 1.75rem; color: #333;">Location</h1>
+            <p style="margin-left: 24px; line-height: 1.75; padding-right: 24px; text-align: justify; color: #444; font-size: 1rem;">
                 Currently, I am based in Hibucawan, Jaro, Leyte, Philippines.
             </p>
-            <div style="width: 100%; height: 250px; border-radius: 12px; overflow: hidden;">
+            <div style="width: 100%; height: 260px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 16px;">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10775.693978641779!2d124.76337881432718!3d11.222439100690123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33080989f1e70161%3A0xf071f0235cc8449c!2sHibucawan%2C%20Jaro%2C%20Leyte!5e1!3m2!1sen!2sph!4v1755608558462!5m2!1sen!2sph"
-                            width="600"
-                            height="450"
+                            width="100%"
+                            height="100%"
                             style="border:0;"
                             allowfullscreen="" 
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
             </div>
-            <hr/>
         </section>
         <section>
-            <h1 style="margin-bottom: 10px;">Technologies</h1>
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: 20px;">
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #512BD4; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-circle-fill" style="margin-right: 6px;"></i> .NET
+            <h1 style="margin-bottom: 16px; font-weight: 700; font-size: 1.75rem; color: #333;">Technologies</h1>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-left: 24px;">
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #5a3eda; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-circle-fill" style="margin-right: 8px;"></i> .NET
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #00758F; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-database" style="margin-right: 6px;"></i> SQL
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #008a9f; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-database" style="margin-right: 8px;"></i> SQL
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #F7DF1E; color: black; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-filetype-js" style="margin-right: 6px;"></i> JavaScript
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #f0db4f; color: #222; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-filetype-js" style="margin-right: 8px;"></i> JavaScript
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #E34F26; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-filetype-html" style="margin-right: 6px;"></i> HTML
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #e44d26; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-filetype-html" style="margin-right: 8px;"></i> HTML
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #7952B3; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-bootstrap" style="margin-right: 6px;"></i> Bootstrap
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #6f5bbd; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-bootstrap" style="margin-right: 8px;"></i> Bootstrap
                 </span>
             </div>
         
-            <h1 style="margin: 30px 0 10px;">Frameworks</h1>
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: 20px;">
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #512BD4; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-globe" style="margin-right: 6px;"></i> ASP.NET Core
+            <h1 style="margin: 36px 0 16px; font-weight: 700; font-size: 1.75rem; color: #333;">Frameworks</h1>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-left: 24px;">
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #5a3eda; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-globe" style="margin-right: 8px;"></i> ASP.NET Core
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #178600; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-lightning" style="margin-right: 6px;"></i> Blazor
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #1f8a00; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-lightning" style="margin-right: 8px;"></i> Blazor
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #68217A; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-diagram-3" style="margin-right: 6px;"></i> Entity Framework
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #7a3b8e; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-diagram-3" style="margin-right: 8px;"></i> Entity Framework
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #EE4323; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-fire" style="margin-right: 6px;"></i> CodeIgniter 3
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #e94e2a; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-fire" style="margin-right: 8px;"></i> CodeIgniter 3
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #339933; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-node-plus" style="margin-right: 6px;"></i> Node.js
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #3a9a33; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-node-plus" style="margin-right: 8px;"></i> Node.js
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #DD0031; color: white; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-circle-square" style="margin-right: 6px;"></i> Angular
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #d9002e; color: white; font-weight: 700; display: flex; align-items: center; transition: background-color 0.3s ease; cursor: default;">
+                    <i class="bi bi-circle-square" style="margin-right: 8px;"></i> Angular
                 </span>
             </div>
             
-            <h1 style="margin: 30px 0 10px;">DevOps</h1>
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-left: 20px;">
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #333; color: white; font-weight: bold; display: flex; align-items: center; gap: 8px;">
-                    <i class="bi bi-github"></i> GitHub
+            <h1 style="margin: 36px 0 16px; font-weight: 700; font-size: 1.75rem; color: #333;">DevOps</h1>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-left: 24px;">
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #444; color: white; font-weight: 700; display: flex; align-items: center; gap: 10px; cursor: default;">
+                    <i class="bi bi-github" style="font-size: 1.2rem;"></i> GitHub
                 </span>
-                <span style="padding: 8px 16px; border-radius: 20px; background-color: #0078D7; color: white; font-weight: bold; display: flex; align-items: center; gap: 8px;">
-                    <i class="bi bi-cloud-fill"></i> Azure
+                <span style="padding: 10px 20px; border-radius: 24px; background-color: #0078d7; color: white; font-weight: 700; display: flex; align-items: center; gap: 10px; cursor: default;">
+                    <i class="bi bi-cloud-fill" style="font-size: 1.2rem;"></i> Azure
                 </span>
             </div>
         </section>
         <section>
-            <h1 style="margin-bottom: 10px;">Social Media</h1>
-            <div style="display: flex; gap: 20px;">
-                <a href="https://www.linkedin.com/in/john-duavis/" target="_blank" style="text-decoration: none; padding: 10px 20px; background-color: #0A66C2; color: white; border-radius: 6px; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-linkedin" style="margin-right: 8px;"></i>LinkedIn
+            <h1 style="margin-bottom: 16px; font-weight: 700; font-size: 1.75rem; color: #333;">Social Media</h1>
+            <div style="display: flex; gap: 24px;">
+                <a href="https://www.linkedin.com/in/john-duavis/" target="_blank" style="text-decoration: none; padding: 12px 28px; background-color: #0A66C2; color: white; border-radius: 8px; font-weight: 700; display: flex; align-items: center; box-shadow: 0 4px 12px rgba(10,102,194,0.3); transition: background-color 0.3s ease, box-shadow 0.3s ease;">
+                    <i class="bi bi-linkedin" style="margin-right: 10px; font-size: 1.25rem;"></i>LinkedIn
                 </a>
-                <a href="https://github.com/Duavs" target="_blank" style="text-decoration: none; padding: 10px 20px; background-color: #333; color: white; border-radius: 6px; font-weight: bold; display: flex; align-items: center;">
-                    <i class="bi bi-github" style="margin-right: 8px;"></i>GitHub
+                <a href="https://github.com/Duavs" target="_blank" style="text-decoration: none; padding: 12px 28px; background-color: #333; color: white; border-radius: 8px; font-weight: 700; display: flex; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: background-color 0.3s ease, box-shadow 0.3s ease;">
+                    <i class="bi bi-github" style="margin-right: 10px; font-size: 1.25rem;"></i>GitHub
                 </a>
             </div>
         </section>
         @if (showScrollButton)
         {
-            <button @onclick="ScrollToTop" id="scrollTop" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; border: none; border-radius: 50%; background-color: #0A66C2; color: white; font-size: 24px; cursor: pointer; box-shadow: 0 4px 8px rgba(10,102,194,0.6); transition: box-shadow 0.3s ease, transform 0.3s ease; display: flex; align-items: center; justify-content: center;">
+            <button @onclick="ScrollToTop" id="scrollTop" style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; border: none; border-radius: 50%; background: linear-gradient(135deg, #0A66C2, #004a8f); color: white; font-size: 26px; cursor: pointer; box-shadow: 0 6px 16px rgba(10,102,194,0.7); transition: box-shadow 0.4s ease, transform 0.4s ease; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px);">
                 <i class="bi bi-arrow-up"></i>
             </button>
         }
